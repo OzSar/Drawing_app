@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ozge.drawingapp.DrawingView
+        android:id="@+id/drawing_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Renk Seçimleri -->
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Red"
+            android:backgroundTint="#FF0000"
+            android:onClick="setRedColor" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Blue"
+            android:backgroundTint="#0000FF"
+            android:onClick="setBlueColor" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Green"
+            android:backgroundTint="#008000"
+            android:onClick="setGreenColor" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Yellow"
+            android:backgroundTint="#FFFF00"
+            android:onClick="setYellowColor" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Orange"
+            android:backgroundTint="#FFA500"
+            android:onClick="setOrangeColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Kalınlık Seçimi -->
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Thin"
+            android:onClick="setThinStroke" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Medium"
+            android:onClick="setMediumStroke" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Thick"
+            android:onClick="setThickStroke" />
+
+        <!-- Çöp Kutusu Butonu (Temizleme) -->
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Clear"
+            android:onClick="clearCanvas" />
+    </LinearLayout>
+</LinearLayout>
